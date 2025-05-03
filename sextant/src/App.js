@@ -2,6 +2,7 @@
 import Banner from "./components/Banner";
 import Exhibit from "./components/Exhibit";
 import IPAddress from "./components/IPAddress";
+import LatencyMonitor from "./components/LatencyMonitor";
 
 const Dashboard = () => {
   return (
@@ -14,6 +15,10 @@ const Dashboard = () => {
             <IPAddress version="v4" />
             <IPAddress version="v6" />
           </div>
+        </Exhibit>
+
+        <Exhibit heading="Latency Metrics">
+          <LatencyMonitor />
         </Exhibit>
       </main>
     </div>
